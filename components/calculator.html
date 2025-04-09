@@ -1,0 +1,75 @@
+<section id="calculator" class="calculator">
+    <div class="blur-11"></div>
+    <div class="blur-12"></div>
+    <div class="blur-13"></div>
+    <div class="calculator-card">
+        <div class="calculator_first">
+            <img
+                loading="lazy"
+                src="./images/calculatorIcon1.svg"
+                alt="calculator icons"
+            />
+        </div>
+        <div class="calculator_second">
+            <img
+                loading="lazy"
+                src="../images/calculatorPic1.webp"
+                alt="calculator icons"
+            />
+        </div>
+        <div class="calculator_third">
+            <img
+                loading="lazy"
+                src="../images/calculatorPic2.webp"
+                alt="calculator icons"
+            />
+        </div>
+        <h2 data-title="calculatorTitle">
+            Let's calculate your <span>earnings</span>?
+        </h2>
+        <div class="calculator-fields">
+            <div>
+                <label data-title="input1"
+                    >Estimated number of followers on Desire</label
+                >
+                <input
+                    type="number"
+                    name="positiveInteger"
+                    min="0"
+                    step="1"
+                    oninput="validity.valid||(value='');"
+                />
+            </div>
+            <div>
+                <label data-title="input2"
+                    >Type the planned subscription price:</label
+                >
+                <input
+                    type="number"
+                    name="positiveInteger2"
+                    min="0"
+                    step="1"
+                    oninput="validity.valid||(value='');"
+                />
+            </div>
+        </div>
+        <p class="calculator-price">
+            <span data-title="calculateTitle1"
+                >With a subscription price of
+            </span>
+            <span class="subcribePrice">0</span>
+            <span data-title="calculateTitle2"
+                ><br />
+                you will earn:
+            </span>
+        </p>
+        <div class="calculator-total">
+            <p class="subcribeTotal">0</p>
+            <p class="price-info" data-title="calculatePrice">RUB/month</p>
+        </div>
+        <p class="calculator-final" data-title="finalPrice">
+            This is the final amount <br />after deducting all taxes and fees
+        </p>
+        <a href="https://app.desire.fans" data-title="signUp">Sign up</a>
+    </div>
+</section>
