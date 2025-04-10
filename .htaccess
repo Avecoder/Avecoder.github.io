@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{QUERY_STRING} cachebust [NC]
+RewriteRule ^(.*)$ - [E=NO_CACHE:1]
+
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0" env=NO_CACHE
+  Header set Pragma "no-cache" env=NO_CACHE
+  Header set Expires "0" env=NO_CACHE
+</IfModule>
